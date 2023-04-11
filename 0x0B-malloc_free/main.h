@@ -1,23 +1,8 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-    // Function to print buffer in hexa, not relevant to the create_array function
-}
-
-int main(void)
-{
-    char *buffer;
-
-    buffer = create_array(98, 'H');
-    if  (buffer == NULL)
-    {
-        printf("failed to allocate memory\n");
-        return (1);
-    }
-    simple_print_buffer(buffer, 98);
-    free(buffer);
-    return (0);
-}
+int _putchar(char c);
+char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
+char *str_concat(char *s1, char *s2);
+int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
+char *argstostr(int ac, char **av);
+char **strtow(char *str);
